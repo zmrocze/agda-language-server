@@ -6,6 +6,10 @@ compiler-check: newer-minor
 packages:
 - .
 
+nix:
+  enable:  true
+  packages: [zlib.dev, zlib.out, pkg-config, icu]
+
 extra-deps:
 - Agda-2.6.4
 
